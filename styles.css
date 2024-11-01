@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    background-color: rgba(34, 33, 31, 0.85);
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a i {
+    color: white;
+    font-size: 1.5em;
+    padding: .5em;
+}
+
+header a {
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    padding: .5em;
+    gap: 1.1em;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#profile {
+    width: 10em;
+}
+
+/* #carrusel1 {
+    width: 100%;
+} */
+
+#seccion-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-1 {
+    width: 80%;
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    border: solid 1px rgb(129, 88, 73);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.parrafo2 {
+    text-align: justify;
+}
+
+.seccion2 {
+    width: 100%;
+    background-image: url(/mi_primera_web/img/fantasy-group-adventurers.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 10em;
+    align-content: center;
+    text-align: center;
+    color: azure;
+}
+
+.seccion3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    margin: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    align-items: center;
+    text-align: justify;
+    border: solid 1px rgb(129, 88, 73);
+    border-radius: 10px;
+    background-color: gray;
+    box-shadow: 0.3rem 0.3rem 0.5rem black;
+}
+
+.imagenTarjeta {
+    width: 80%;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.8rem black;
+}
+
+.leerMas {
+    text-decoration: none;
+    color: beige;
+    background-color: rgb(56, 35, 246);
+    padding: .2rem;
+    border-radius: 10px;
+    justify-self: self-end;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(34, 33, 31, 0.85);
+    color: black;
+}
+
+.footerSeccion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.parrafoFooter {
+    display: inline;
+}
+
+.redes {
+    /* display: flex; */
+    flex-direction: row;
+}
+
+.iconosFooter {
+    width: 2rem;
+}
+
+/* RESPONSIVE MEDIA QUERY PARA PANTALLA MENOR A 768 PIXELES */
+
+@media (max-width: 768px) {
+    header {
+        background-color: burlywood;
+        position: fixed;
+        width: 100%;
+    }
+
+     .seccion-1 {
+        margin: 90px 2rem 2rem 2rem;
+    } 
+
+    .acerca-de {
+        text-align: center;
+    }
+
+    .acerca-imagen {
+        margin-bottom: 40px;
+    }
+
+    .fuente-acento {
+        text-align: center;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 64px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: #2c3e50;
+    }
+
+
+}
